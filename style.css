@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #dad7d7;
+  --el-rgb-color: rgb(255, 87, 51);
+  --el-hex-color: #ff5733;
+  --bn-hex-dk-color: #4882de;
+  --bn-hex-lt-color: #a9bcd8;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: var(--bg-color);
+}
+
+main > div {
+  padding: 20px;
+}
+
+main .main-top h1 {
+  color: black;
+  margin-bottom: -30px;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+
+main .main-bottom #main-bottom-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+  /* border: 5px solid #fff; */
+}
+
+main .main-bottom #main-bottom-content > div {
+  height: auto;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+#main-bottom-content .card {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 10px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+#main-bottom-content .card h3 {
+  color: #2592ff;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+#main-bottom-content .card hr {
+  border: 0.5px solid #fff;
+}
+
+#main-bottom-content .card p {
+  color: #000000;
+}
+
+#main-bottom-content .card p:first-child {
+  margin-bottom: 20px;
+}
+
+#main-bottom-content .card .card-title-section {
+  display: grid;
+  grid-template-columns: 1fr 70px;
+}
+
+.rating-icons {
+  margin-top: 10px;
+  color: #040404;
+}
+.rating-icons i {
+  margin-right: 5px;
+}
+
+footer {
+  height: 80px;
+  width: 100vw;
+  /* margin-top: 100%; */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
